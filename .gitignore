@@ -1,0 +1,17 @@
+# Android/Gradle
+.gradle/
+.idea/
+**/build/
+caches/
+wrapper/
+local.properties
+*.iml
+*.log
+.DS_Store
+
+# APK/AAB outputs
+*.apk
+*.aab
+
+# IDE stuff
+.vscode/

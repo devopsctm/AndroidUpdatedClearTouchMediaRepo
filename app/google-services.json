@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372399670278",
+    "project_id": "cleartouchmedia-446d7",
+    "storage_bucket": "cleartouchmedia-446d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372399670278:android:5c6a45460d4b2bf52baf87",
+        "android_client_info": {
+          "package_name": "com.hem.cleartouchmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372399670278-e8h6clc0e5iul3ahh0s4rrnnompgm6kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTeWRJzz1UQMl43LofzS3WBtSLgJtJUBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372399670278-e8h6clc0e5iul3ahh0s4rrnnompgm6kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

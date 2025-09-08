@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:padding="@dimen/_3ssp"
+        android:layout_margin="@dimen/_5ssp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1.0"
+            android:gravity="center|top"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twitter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:layout_gravity="start|center"
+                android:gravity="start|center"/>
+
+            <!--<TextView
+                android:id="@+id/twitter_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/teal_700"
+                android:layout_gravity="start|center"
+                android:gravity="start|center"/>-->
+
+            <ImageView
+                android:id="@+id/twitter_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:maxHeight="@dimen/_50sdp"
+                android:gravity="top|center"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_3ssp"
+                android:scaleType="centerInside"
+                android:contentDescription="TODO" />
+
+            <VideoView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="top|center"
+                android:gravity="top|center"
+                android:layout_margin="@dimen/_3ssp"
+                android:id="@+id/twitter_video">
+            </VideoView>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.2"
+            android:gravity="center|top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/slider_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sliderIndicatorEnabled="false"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="@dimen/_14sdp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="@dimen/_2sdp"
+                app:sliderIndicatorRadius="@dimen/_2sdp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF" />
+
+        </LinearLayout>-->
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Clear Touch Media</string>
+    <string name="clock">Clock</string>
+    <string name="weather">Weather</string>
+    <string name="twitter">Twitter
+    </string>
+    <string name="twitter_profile_name">Profile Name</string>
+    <string name="twitter_user_name">User Name</string>
+    <string name="weather_location">weather city</string>
+    <string name="weather_date">weather date</string>
+    <string name="weather_type">Clear</string>
+    <string name="weather_temp">--</string>
+    <string name="weather_feel">feel --</string>
+    <string name="clock_date">--/--/----</string>
+    <string name="clock_time">--:--</string>
+    <string name="clock_location">day</string>
+    <string name="Code_text">XyZabC</string>
+    <string name="splash_screen_welcome_text">Clear Touch Media</string>
+    <string name="media_text">Connecting to media…</string>
+    <string name="waiting_text">Waiting for content…</string>
+    <string name="loading_text">Media is loading…</string>
+    <string name="enter_code_text">Please use this code for further process</string>
+    <string name="demo_text">demo</string>
+    <string name="open_app">Open App</string>
+    <string name="click_app">Click App</string>
+
+    <string name="default_notification_channel_id">defalt_channel_id</string>
+
+</resources>
