@@ -545,6 +545,15 @@
                 android:layout_gravity="center"
                 android:gravity="center" />
 
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/exoplayerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:keepScreenOn="true"
+                app:resize_mode="fit"
+                app:use_controller="false"
+                />
+
             <!--<com.devbrackets.android.exomedia.ui.widget.VideoView
                 android:id="@+id/zone_one_video"
                 android:layout_width="match_parent"

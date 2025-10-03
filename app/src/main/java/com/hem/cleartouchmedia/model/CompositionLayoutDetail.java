@@ -866,4 +866,39 @@ public class CompositionLayoutDetail {
     public String getGoogle_slides_url() {
         return google_slides_url;
     }
+
+
+    // In CompositionLayoutDetail.java (add at bottom or near existing getters)
+
+    @NonNull
+    public String getIdSafe() {
+        return id != null ? id : ""; // OR generate UUID
+    }
+
+    @NonNull
+    public String getZoneTypeSafe() {
+        return zone_type != null ? zone_type : "";
+    }
+
+    @NonNull
+    public String getMediaIdSafe() {
+        return media_id != null ? media_id : "";
+    }
+
+    @NonNull
+    public String getDurationSafe() {
+        return duration != null ? duration : "0";
+    }
+
+    // Optional: keep these as String but provide boolean-ish helpers
+    public boolean isBgMusicPausedSafe() {
+        // server returns "1"/"0" or null
+        return "1".equals(is_pause);
+    }
+
+    @NonNull
+    public String getBgMusicUrlSafe() {
+        return music_url != null ? music_url : "";
+    }
+
 }

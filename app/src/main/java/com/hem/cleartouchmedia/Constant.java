@@ -6,8 +6,8 @@ public class Constant {
 
     private static String DOMAIN_URL = "http://155.138.158.13/"; //domain or admin panel url
     public static String BASE_URL = DOMAIN_URL + "api/updateScreenRegiToken";  //api url
-    //public static String imgURL = "https://dev.cleartouchmedia.com/images/";
-    public static String imgURL = "https://demo.cleartouchmedia.com/images/";
+    public static String imgURL = "https://dev.cleartouchmedia.com/images/";
+  //  public static String imgURL = "https://demo.cleartouchmedia.com/images/";
     public static String FOLDER_NAME = "ClearTouchMedia";
     public static int DELAY_SECONDS = 30 * 60 * 1000;//30*60000=1800000
 //    public static int DELAY_SECONDS = 1000;

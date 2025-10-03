@@ -39,7 +39,11 @@ public class CompositionLayoutResponse
         this.compositionLayoutDetail = compositionLayoutDetail;
     }
 
-    public List<CompositionLayoutDetail> getCompositionLayoutDetail() {
+   /* public List<CompositionLayoutDetail> getCompositionLayoutDetail() {
         return compositionLayoutDetail;
+    }*/
+
+    public List<CompositionLayoutDetail> getCompositionLayoutDetail() {
+        return (compositionLayoutDetail == null) ? java.util.Collections.emptyList() : compositionLayoutDetail;
     }
 }

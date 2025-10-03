@@ -13,11 +13,11 @@ public class ApplicationConstants {
 
     public static final String DEFAULT = "default";
 
-   // public static final String BASE_URL = "https://dev.cleartouchmedia.com/api/";
-   // public static final String BUILT_STATUS = "DEV";
+   public static final String BASE_URL = "https://dev.cleartouchmedia.com/api/";
+    public static final String BUILT_STATUS = "DEV";
 
-    public static final String BASE_URL = "https://demo.cleartouchmedia.com/api/";
-   public static final String BUILT_STATUS = "DEMO";
+  //  public static final String BASE_URL = "https://demo.cleartouchmedia.com/api/";
+  //  public static final String BUILT_STATUS = "DEMO";
 
     public static String IS_LOGGED = "IsLoggedIn";
     public static String IS_DOWNLOAD = "IsDownload";

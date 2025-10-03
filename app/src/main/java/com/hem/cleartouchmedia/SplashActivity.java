@@ -207,17 +207,17 @@ public class SplashActivity extends AppCompatActivity {
                         DeviceStatusCheckReponse deviceStatusCheckReponse = response.body();
                         if(deviceStatusCheckReponse.getStatus().equalsIgnoreCase("1"))
                         {
-                            Log.d(TAG, "<< Response of DevicePushStatusReponse success "+deviceStatusCheckReponse.getMessage());
+                            Log.d(TAG, "<< Response of DevicePushStatusReponse success splash screen "+deviceStatusCheckReponse.getMessage());
                         }
                         else
                         {
-                            Log.d(TAG, "<< Response of DevicePushStatusReponse failed ");
+                            Log.d(TAG, "<< Response of DevicePushStatusReponse failed splash screen");
                         }
                     }
                 }
                 @Override
                 public void onFailure(Call<DeviceStatusCheckReponse> call, Throwable t) {
-                    Log.d("main", "onFailure: "+t.getMessage());
+                    Log.d("main", "onFailure: splash screen "+t.getMessage());
                 }
             });
         }

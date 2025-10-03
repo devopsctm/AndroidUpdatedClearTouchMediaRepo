@@ -246,7 +246,7 @@ public class ScreenActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<CompositionStatusCheckResponse> call, Response<CompositionStatusCheckResponse> response) {
 
-                    Log.d("TAG", "<< Response of screen inside CompositionStatusCheckResponse getCompositionStatusCheck");
+                    Log.d("TAG", "<< Response of screen inside CompositionStatusCheckResponse getCompositionStatusCheck"+response.toString());
                     if(response.isSuccessful()) {
                         CompositionStatusCheckResponse compositionStatusCheckResponse = response.body();
                         if(compositionStatusCheckResponse.getStatus().equals("1")) {

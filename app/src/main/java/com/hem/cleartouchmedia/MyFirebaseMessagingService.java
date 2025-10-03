@@ -31,10 +31,6 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 
 
-/**
- * Created by Ravi Tamada on 08/08/16.
- * www.androidhive.info
- */
 public class MyFirebaseMessagingService extends FirebaseMessagingService
 {
     private static final String TAG = MyFirebaseMessagingService.class.getSimpleName();
@@ -164,7 +160,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService
         SharedPreferences pref = getApplicationContext().getSharedPreferences(Config.SHARED_PREF, 0);
         SharedPreferences.Editor editor = pref.edit();
         editor.putString("regId", token);
-        editor.commit();
+        editor.apply();
     }
 }
 

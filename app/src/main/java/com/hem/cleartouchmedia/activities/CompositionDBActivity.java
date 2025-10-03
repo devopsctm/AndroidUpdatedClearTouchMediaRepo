@@ -106,9 +106,10 @@ public class CompositionDBActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<ScreenResponse> call, Response<ScreenResponse> response) {
 
-                    Log.d(TAG, "<< Response of screen inside response in compositionDBActivity ");
+                    Log.d(TAG, "<< Response of screen inside response in compositionDBActivity "+response.body());
                     if(response.isSuccessful()) {
                         Log.d(TAG, "<< Response of screen body  in compositionDBActivity " + response.body().getMessage());
+                        Log.d("==============================", "<< Response of screen body  in compositionDBActivity " + response.toString());
                         screenResponse = response.body();
                         repository.insert(screenResponse.getScreen());
                         getCompositionResponse();
@@ -186,7 +187,7 @@ public class CompositionDBActivity extends AppCompatActivity {
                     }
                     else if(screen.getLayoutType().equalsIgnoreCase("layout1"))
                     {
-                        System.out.println("<< Response screen component by layout type 1 in compositionDBActivity : "+TAG + screen.getLayoutType());
+                        System.out.println("<< Response screen component by layout type 1 in compositionDBActivity : "+TAG + screen.getLayoutType()+"==============="+screen.getOrientation());
                         Intent in = new Intent(CompositionDBActivity.this, CompositionLayoutOneDBActivity.class);
                         in.putExtra("COMPOSITION_ID", screen.getComposition_id());
                         in.putExtra("ORIENTATION", screen.getOrientation());
